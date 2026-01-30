@@ -1,0 +1,119 @@
+/* إعادة ضبط أساسية */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  font-family: 'Changa One', sans-serif;
+}
+
+/* تنسيق الهيدر */
+header {
+  display: flex;
+  justify-content: space-between; /* توزيع العناصر يمين ويسار */
+  align-items: center;
+  padding: 15px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* الشعار */
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* قوائم وروابط */
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.container {
+  max-width: 600px;              /* عرض مناسب */
+  margin: 80px auto;             /* توسيط عمودي وأفقي */
+  padding: 40px;
+  background: #f8f9fa;           /* خلفية فاتحة */
+  border-radius: 12px;           /* زوايا ناعمة */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15); /* ظل أنيق */
+  text-align: center;
+  font-family: 'Oswald', sans-serif; /* خط من Google Fonts */
+}
+
+/* العنوان داخل الـ container */
+.container h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #0077b6;                /* لون بارز */
+  font-family: 'Changa One', sans-serif;
+}
+
+/* حقل الإدخال */
+#input {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 1rem;
+  border: 2px solid #0077b6;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.3s ease;
+  font-family: 'Science Gothic', sans-serif;
+  
+}
+
+/* تأثير عند التركيز */
+#input:focus {
+  border-color: #00b4d8;
+  box-shadow: 0 0 8px rgba(0,180,216,0.5);
+}
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+#input {
+  flex: 1;
+  padding: 12px 15px;
+  border: 2px solid #0077b6;
+  border-radius: 50px;
+  outline: none;
+  font-size: 1rem;
+  padding-right: 120px; /* مساحة للزر داخل الحقل */
+}
+
+.btn {
+  position: absolute;
+  right: 8px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 50px;
+  background: #0077b6;
+  color: rgb(239, 239, 239);
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-family: 'Science Gothic', sans-serif;
+}
+
+.btn:hover {
+  background: #00b4d8;
+}
+.cover {
+  position: fixed;       /* يثبت الفيديو في الخلفية */
+  top: 0;
+  left: 0;
+  width: 100%;           /* يغطي العرض بالكامل */
+  height: 100%;          /* يغطي الطول بالكامل */
+  object-fit: cover;     /* يملأ الشاشة بدون تشويه */
+  z-index: -1;           /* يضعه خلف كل العناصر */
+}
